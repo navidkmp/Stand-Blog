@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}contact us{% endblock %}
+
+{% block content %}
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="down-contact">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="sidebar-item contact-form">
+                                    <div class="sidebar-heading">
+                                        <h2>Send us a message</h2>
+                                    </div>
+                                    <div class="content">
+                                        <form id="contact" action="" method="post">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                {{ form.text.errors }}
+                                                <div class="col-lg-12">
+                                                    {{ form }}
+                                                    <div class="col-lg-12">
+                                                        <fieldset>
+                                                            <button type="submit" id="form-submit" class="main-button">
+                                                                Send Message
+                                                            </button>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
