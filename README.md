@@ -81,16 +81,6 @@ You can then create, edit, and manage your blog posts.
 
 ---
 
-🔮 Future Improvements
-
-- Comment system
-- Advanced article search
-- Categories
-- User authentication
-- Production deployment
-
----
-
 🤝 Contributing
 
 Contributions, suggestions, and improvements are welcome.
