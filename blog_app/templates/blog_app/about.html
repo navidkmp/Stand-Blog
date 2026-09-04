@@ -31,34 +31,41 @@
             <div class="row">
                 <div class="col-lg-12">
                     <img src="{% static 'images/about-us.jpg' %}" alt="">
-                    <p>Please tell your friends about TemplateMo website. Thank you. You can browse through different
-                        categories of templates such as <a rel="nofollow" href="https://templatemo.com/tag/business"
-                                                           target="_parent">business</a>, <a rel="nofollow"
-                                                                                             href="https://templatemo.com/tag/portfolio"
-                                                                                             target="_parent">portfolio</a>,
-                        <a rel="nofollow" href="https://templatemo.com/tag/restaurant" target="_parent">restaurant</a>,
-                        etc. Pellentesque quis luctus libero. Maecenas pretium molestie erat, ac tincidunt leo gravida
-                        ac. Cras ullamcorper eu ipsum eu sollicitudin. Fusce vitae commodo turpis. Integer ullamcorper
-                        purus nec justo mollis fermentum. Nunc imperdiet erat nec lacinia laoreet. <br><br>Maecenas
-                        faucibus ullamcorper felis vitae finibus. Nullam at quam ut lacus aliquam tempor vel sed ipsum.
-                        Donec pellentesque tincidunt imperdiet. Mauris sit amet justo vulputate, cursus massa congue,
-                        vestibulum odio. Aenean elit nunc, gravida in erat sit amet, feugiat viverra leo. Phasellus
-                        interdum, diam commodo egestas rhoncus, turpis nisi consectetur nibh, in vehicula eros orci vel
-                        neque.</p>
+                    <p>About Us
+
+                        We believe a great digital product should be more than just visually appealing. It should be
+                        fast, simple, useful, and enjoyable to use.
+
+                        This project was created with the goal of building a modern and meaningful digital experience
+                        where clean design, thoughtful development, and attention to detail come together. <br></br> From the very
+                        first line of code to the smallest interface details, every part has been designed and developed
+                        with purpose.
+
+                        For us, learning and improving are an essential part of the development journey. Every project
+                        is an opportunity to explore new technologies, solve real-world problems, experiment with new
+                        ideas, and turn simple concepts into useful products.
+
+                        This project represents countless hours of learning, experimenting, problem-solving, and a
+                        genuine passion for building things from scratch. But the journey doesn't end here. There is
+                        always something new to learn, something to improve, and something better to build.
+
+                        We don't just write code to make things work; we build with the goal of creating something worth
+                        using.
+                    </p>
+
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="{{ about.github }}"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" href="{{ about.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="{{ about.instagram }}"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 {% endblock %}
-</body>
 </html>

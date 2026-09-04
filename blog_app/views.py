@@ -1,8 +1,7 @@
-from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.template.context_processors import request
 from django.views.generic import DetailView
-from blog_app.models import Article, Category, Comment, Message
+from blog_app.models import Article, Category, Comment, Message, AboutLinks
 from django.core.paginator import Paginator
 from .forms import ContactUsForm, MessageForm
 
@@ -50,6 +49,6 @@ def contactus(request):
         form = MessageForm()
     return render(request, "blog_app/contactus.html", {'form': form})
 
-
 def aboutus(request):
-    return render(request, "blog_app/about.html")
+    about = AboutLinks.objects.first()
+    return render(request, "blog_app/about.html", {'about': about})

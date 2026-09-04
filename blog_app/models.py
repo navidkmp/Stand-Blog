@@ -71,8 +71,14 @@ class Message(models.Model):
         return self.name
 
 
+class AboutLinks(models.Model):
+    github = models.CharField(max_length=50)
+    linkedin = models.CharField(max_length=50)
+    instagram = models.CharField(max_length=50)
+
+
+
 class Footer(models.Model):
-    whatsapp = models.CharField(max_length=30)
     telegram = models.CharField(max_length=30)
     instagram = models.CharField(max_length=50)
     github = models.CharField(max_length=50)

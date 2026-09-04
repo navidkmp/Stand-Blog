@@ -793,13 +793,13 @@ footer {
 	margin-top: 100px;
 	text-align: center;
 	background-color: #20232e;
-	padding: 60px 0px;
+	padding: 35px 0px;
 }
 
 footer ul.social-icons {
-	padding-bottom: 60px;
-	margin-bottom: 60px;
-	border-bottom: 1px solid rgba(250,250,250,0.15);
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+	border-bottom: 3px solid rgba(250,250,250,0.15);
 }
 
 footer ul.social-icons li {
@@ -825,7 +825,7 @@ footer ul.social-icons li a {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 0.25px;
 	transition: all .3s;
 }
@@ -835,9 +835,9 @@ footer ul.social-icons li a:hover {
 }
 
 footer p {
-	font-size: 13px;
+	font-size: 25px;
 	text-transform: uppercase;
-	color: #fff;
+	color: #fd7e14;
 }
 
 footer p a {
